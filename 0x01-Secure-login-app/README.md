@@ -24,8 +24,8 @@ This Secure Login Application is a Java-based desktop application that demonstra
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/secure-login-app.git
-   cd secure-login-app
+   git clone https://github.com/Akachi-Anabanti/0x01-Secure-login-app.git
+   cd 0x01-Secure-login-app
    ```
 
 2. Set up the SQLite database:
