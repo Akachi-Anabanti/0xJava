@@ -20,7 +20,7 @@ public class GeolocationService {
         }
     }
 
-    private Position getCurrentPosition() throws Exception {
+    public Position getCurrentPosition() throws Exception {
         PositionProvider provider = PositionProvider.create();
         return provider.getCurrentPosition();
     }
