@@ -1,4 +1,4 @@
-## Things Learned in DAY 3
+## Things Learned in DAY 2
 0. Java Strings
 1. Java Math
 2. Java Booleans
@@ -10,36 +10,36 @@
 8. Java Arrays
 
 ## Challenges
-a. Palindrome Checker
-	`a programme that checks if a given string is a palindrome (a word, phrase, number) ignore spaces, punctuation, and capitalization.`
+a. `Palindrome Checker`
+	a programme that checks if a given string is a palindrome (a word, phrase, number) ignore spaces, punctuation, and capitalization.
 
-b. Cirlce Properties Calculator
-	`A program that calculates and displays the area and circumference	of  a circle given its Radius`
+b. `Cirlce Properties Calculator`
+	A program that calculates and displays the area and circumference	of  a circle given its Radius`
 
-c. Voting Eligibility
+c. `Voting Eligibility`
 	A java program that determines if a person is eligible to vote based on their age
 
-d. Grade Calculator
+d. `Grade Calculator`
 	A java program that takes a numericalscore as inputs and prints out the corresponding grade (A, B, C, D, F)
-A: 90-100
+``A: 90-100
 B: 80-89
 C: 70-79
 D: 60-69
-F: 0-59
+F: 0-59``
 
-e. Month Name
- A program that takes an integer(1-12) and prints the corresponding month name
+e. `Month Name`
+	A program that takes an integer(1-12) and prints the corresponding month name
 
-f. sum of numbers
+f. `sum of numbers`
 	A program that calculates the sum of all integers from 1 to a given number using a while loop
 
-g. Multiplication Table
+g. `Multiplication Table`
 	A program that prints the multiplication table from 1 to 10 for a given number
 
-f. Prime number Finder
+f. `Prime number Finder`
 	A program that finds the prime numbers between 1 and a given number
 
-g. Array average
+g. `Array average`
 	A program that calculates the average of all numbers in an array.
 
 # Day project
