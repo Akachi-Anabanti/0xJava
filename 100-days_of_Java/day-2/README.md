@@ -15,7 +15,7 @@ a. `Palindrome Checker`
 	[Palindrome](Palindrome.java)
 
 b. `Cirlce Properties Calculator`
-	A program that calculates and displays the area and circumference	of  a circle given its Radius`
+	A program that calculates and displays the area and circumference	of  a circle given its Radius
 	[Circle](Circle.java)
 c. `Voting Eligibility`
 	A java program that determines if a person is eligible to vote based on their age
