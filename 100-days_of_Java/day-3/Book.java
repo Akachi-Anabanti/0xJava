@@ -1,11 +1,10 @@
 // a Book details class
 //
 
-
 public class Book {
 	private String title;
 	private String author;
-	private int year;
+	public int year;
 	private static int nBooks = 0; // number of books created
 
 	public Book(String title, String author, int year) {
