@@ -14,6 +14,7 @@
 1. **Java Methods**
 
     **Challenge:** Write a Java method that takes a string and returns the number of vowels in the string.
+	[Vowel Cunter](VowelCounter.java)
 
 2. **Java Method Overloading**
 
