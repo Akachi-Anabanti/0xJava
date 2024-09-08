@@ -30,6 +30,7 @@
 3. **Java Recursion**
 
     **Challenge:** Write a recursive method to compute the nth Fibonacci number.
+	[Nth Fibonacci Number](Fibonacci.java)
 
 4. **Java Class/Objects**
 
