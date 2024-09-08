@@ -25,7 +25,7 @@
     - Take a single string and return it in uppercase.
     - Take two strings and return them concatenated with a space in between.
     - Take a string and an integer, and return the string repeated `n` times, where `n` is the integer.
-
+	[Text Formatter](Formatter.java)
 
 3. **Java Recursion**
 
