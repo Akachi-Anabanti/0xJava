@@ -10,6 +10,7 @@
 8. Regex
 9. Comparator
 10. Comparable
+11. Project setup with MAVEN
 
 # TASK
 
