@@ -8,16 +8,12 @@ public class VehicleMain {
 	}
 
 	static class Car extends Vehicle {
-
-		@Override
 		public String starts() {
 			return "Car started";
 		}
 	}
 
 	static class Bike extends Vehicle {
-
-		@Override
 		public String starts(){
 			return "Bike started";
 		}
