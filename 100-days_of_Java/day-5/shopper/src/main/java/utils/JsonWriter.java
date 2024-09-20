@@ -1,4 +1,4 @@
-package utils;
+package shopper.src.main.java.utils;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,12 +12,13 @@ public class JsonWriter {
     public static void writeObjectToFile(Object object, String filePath) throws IOException, IllegalAccessException{
         
         String json = convertToJson(object);
-        try (FileWriter writer = new FileWriter(filePath)) {
+        try (FileWriter writer = new FileWriter(filePath, true)) {
             writer.write(json);
+            writer.write('\n');
         }
     } 
 
-    private static String convertToJson(Object object) throws IllegalAccessException {
+    public static String convertToJson(Object object) throws IllegalAccessException {
         Map<String, Object> map = new HashMap<>();
         Field[] fields = object.getClass().getDeclaredFields();
 

@@ -1,8 +1,6 @@
+package shopper.src.main.java.utils;
 import java.io.IOException;
-import java.io.Serializable;
 import java.io.File;
-
-import utils.JsonWriter;
 
 public class ObjectWriter {
     public static void main(String[] args) {
