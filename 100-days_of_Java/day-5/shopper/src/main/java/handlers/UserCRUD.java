@@ -2,6 +2,7 @@ package shopper.src.main.java.handlers;
 
 import java.util.Scanner;
 
+import shopper.src.main.java.Database.DB;
 import shopper.src.main.java.models.User;
 import shopper.src.main.java.stores.UserStore;
 
@@ -14,6 +15,16 @@ public class UserCRUD {
         this.userStore = UserStore.getInstance();
         this.scanner = scanner;
     }
+
+    public void getUserInfo() {
+        System.out.print("\n Enter user ID:");
+        scanner.nextLine();
+        String userID = scanner.nextLine();
+        if (userStore.userExist(userID)) {
+            User user = userStore.getUser(userID);
+            System.out.println(user.toJson());
+        }
+    }
     
     public void createUser() {
         System.out.print("Enter <email> <password>: ");
@@ -25,9 +36,9 @@ public class UserCRUD {
         User user = new User(emailString, passwordString);
         
         System.out.print("\n");
-        user.toJson();
+        System.out.println(user.toJson());
 
-        System.out.print("\nDo you want to save this user? yes/no. default is yes: ");
+        System.out.print("\nDo you want to save (temp) this user? yes/no. default is yes: ");
         String choice = scanner.nextLine().toLowerCase();
 
         if (choice.isEmpty() || choice.equals("yes")) {
@@ -79,25 +90,44 @@ public class UserCRUD {
         }
     }
 
-    // public void readUser() {
-    //     System.out.print("Enter user ID: ");
-    //     String userId = scanner.nextLine();
-        
-    //     userStore.getUser(userId).ifPresentOrElse(
-    //         user -> System.out.println(user.toJson()),
-    //         () -> System.out.println("User not found.")
-    //     );
-    // }
-
     public void deleteUser() {
     System.out.print("Enter user ID: ");
     scanner.nextLine();
         String userId = scanner.nextLine();
         
         if (userStore.removeUser(userId)) {
-            System.out.println("User deleted successfully.");
+            System.out.println("\bUser deleted successfully.");
+            return;
         } else {
             System.out.println("User not found.");
+            return;
         }
+    }
+
+    public void listAllUsers() {
+        userStore.showUsers();
+        return;
+    }
+
+    public void deleteAllUsers() {
+        System.out.print("\n This removes users from cache but does not remove from DB,\n\t continue ? yes/no: default: no");
+        scanner.nextLine();
+        String choice = scanner.nextLine();
+        if (choice.equals("yes")){
+            userStore.removeAllUsers();
+            return;
+        }
+        return;
+    }
+
+    public void saveToDB() {
+        System.out.println("\nSave changes to DB ? yes/no: default: yes");
+        scanner.nextLine();
+        String choice = scanner.nextLine();
+        if (choice.isBlank() || choice.equals("yes")) {
+            DB.save(userStore.getStore());
+            return;
+        }
+        return;
     }
 }

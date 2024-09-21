@@ -37,6 +37,7 @@ public class User extends BaseClass {
     }
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+        update();
     }
 
     // lastName getter and setter
@@ -45,11 +46,13 @@ public class User extends BaseClass {
     }
     public void setLastName(String lastName) {
         this.lastName = lastName;
+        update();
     }
 
     // email setter and getter
     public void setEmail(String email) {
         this.email = email;
+        update();
     }
     public String getEmail() {
         return email;

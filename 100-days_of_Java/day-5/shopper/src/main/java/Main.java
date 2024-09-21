@@ -27,7 +27,7 @@ public class Main {
 
             switch (choice) {
                 case 0:
-                    listAllUsers();
+                    userCRUD.listAllUsers();
                     break;
                 case 1:
                     userCRUD.createUser();
@@ -39,13 +39,18 @@ public class Main {
                     userCRUD.deleteUser();
                     break;
                 case 4:
-                    deleteAllUsers();
+                    userCRUD.deleteAllUsers();
+                    break;
+                case 5:
+                    userCRUD.getUserInfo();
                     break;
                 case 10:
+                    userCRUD.saveToDB();
                     System.out.println("Exiting...");
                     return;
                 default:
                     System.out.println("Please enter a valid response");
+                    continue;
             }
         }
     }
@@ -57,6 +62,7 @@ public class Main {
         System.out.println("2: Update a User Info");
         System.out.println("3: Delete a user");
         System.out.println("4: Delete all users");
+        System.out.println("5: Get a User Detail");
         System.out.println("10: Exit");
         System.out.print("Enter your choice: ");
     }
@@ -67,15 +73,5 @@ public class Main {
             scanner.next(); // Consume the invalid input
         }
         return scanner.nextInt();
-    }
-
-    private void listAllUsers() {
-        // TODO: Implement listing all users
-        System.out.println("Listing all users... (Not implemented yet)");
-    }
-
-    private void deleteAllUsers() {
-        // TODO: Implement removing all users
-        System.out.println("Deleting all users... (Not implemented yet)");
     }
 }

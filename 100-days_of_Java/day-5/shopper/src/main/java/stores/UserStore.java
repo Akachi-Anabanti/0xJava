@@ -25,7 +25,7 @@ public class UserStore {
     // add user to the HashMap
     public void saveUser(User user) {
         userMap.put(user.getId(), user);
-        System.out.println("User saved with ID: " + user.getId());
+        System.out.println("\nUser saved with ID: " + user.getId());
     }
     // remove user from HashMap
     public boolean removeUser(String id) {
@@ -36,6 +36,10 @@ public class UserStore {
         return false;
     }
 
+    public void removeAllUsers() {
+        userMap.clear();
+    }
+
     public int getUserCount() {
         return userMap.size();
     }
@@ -43,13 +47,13 @@ public class UserStore {
     public void showUsers(){
         
         if (userMap.size() == 0) {
-            System.out.println("There are no users yet!");
+            System.out.println("\nThere are no users yet!");
             return;
         }
-
+        System.out.printf("\b\t\tTotal user count %d\n", getUserCount());
         int i = 0;
          for (Map.Entry<String, User> user: userMap.entrySet()) {
-            System.out.printf("%d -> ID: %s Email: %s\n", i++, user.getKey(), user.getValue().getEmail());
+            System.out.printf("\t%d -> ID: %s Email: %s\n", i++, user.getKey(), user.getValue().getEmail());
          }
     }
 
@@ -62,5 +66,9 @@ public class UserStore {
             return userMap.get(Id);
         }
         return null;
+    }
+
+    public Map<String, User> getStore() {
+        return userMap;
     }
 }

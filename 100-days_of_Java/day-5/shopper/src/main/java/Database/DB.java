@@ -34,4 +34,8 @@ public class DB {
         }
         System.out.println("Changes Saved!");
     }
+
+    public void delete() {
+        System.out.println("Deleted");
+    }
 }

@@ -20,11 +20,17 @@ public class JsonWriter {
 
     public static String convertToJson(Object object) throws IllegalAccessException {
         Map<String, Object> map = new HashMap<>();
-        Field[] fields = object.getClass().getDeclaredFields();
-
-        for (Field field: fields) {
-            field.setAccessible(true);
-            map.put(field.getName(), field.get(object));
+        
+        Class<?> clazz = object.getClass();
+        
+        // Traverse the class hierarchy
+        while (clazz != null) {
+            Field[] fields = clazz.getDeclaredFields();
+            for (Field field : fields) {
+                field.setAccessible(true);
+                map.put(field.getName(), field.get(object));
+            }
+            clazz = clazz.getSuperclass(); // Move up to the parent class
         }
 
         StringBuilder jsonBuilder = new StringBuilder("{");
