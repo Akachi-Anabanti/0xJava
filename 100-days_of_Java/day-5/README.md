@@ -12,6 +12,7 @@
 10. Comparable
 11. Project setup with MAVEN
 
+![How to use the mini user CRUD](mini-demo.gif)
 
 # TASK
 
@@ -22,5 +23,6 @@ Create user management app
 **Ensure you have the JAVA and MAVEN installed on your PC**
 Then clone this repo.
 
-![How to use the mini user CRUD](./mini-demo.gif)
+
+
 
