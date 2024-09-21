@@ -22,4 +22,5 @@ Create user management app
 **Ensure you have the JAVA and MAVEN installed on your PC**
 Then clone this repo.
 
-[![How To use the mini User CRUD interface](https://img.youtube.com/vi/v8qmMxFZ0vY/0.jpg)](https://www.youtube.com/watch?v=v8qmMxFZ0vY)
+![How to use the mini user CRUD](./mini-demo.gif)
+
