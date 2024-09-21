@@ -12,7 +12,7 @@
 10. Comparable
 11. Project setup with MAVEN
 
-![How to use the mini user CRUD](mini-demo.gif)
+![How to use the mini user CRUD](/mini-demo.gif)
 
 # TASK
 
