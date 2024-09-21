@@ -14,7 +14,8 @@
 
 <img src="mini-demo.gif" alt="Demo GIF" style="width: 400px; height: auto;">
 
-<img src="https://media.giphy.com/media/xT9IgG50Fb7MiD2YgM/giphy.gif" alt="Test GIF" width="400">
+![Demo GIF](mini-demo.gif)
+
 
 
 
