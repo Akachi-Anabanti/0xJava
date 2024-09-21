@@ -12,7 +12,8 @@
 10. Comparable
 11. Project setup with MAVEN
 
-![How to use the mini user CRUD](/mini-demo.gif)
+<img src="mini-demo.gif" alt="Demo GIF" style="width: 400px; height: auto;">
+
 
 # TASK
 
