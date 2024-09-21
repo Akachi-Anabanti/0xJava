@@ -12,8 +12,14 @@
 10. Comparable
 11. Project setup with MAVEN
 
+
 # TASK
 
-Create a Shoping Catalogue
+Create user management app
 
-**Requirements** - AUser object - An item Object - A cart Object
+**Requirements** - user CRUD
+
+**Ensure you have the JAVA and MAVEN installed on your PC**
+Then clone this repo.
+
+[![How To use the mini User CRUD interface](https://img.youtube.com/vi/v8qmMxFZ0vY/0.jpg)](https://www.youtube.com/watch?v=v8qmMxFZ0vY)
